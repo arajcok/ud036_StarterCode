@@ -38,10 +38,16 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            opacity: 0.8;
+            transition: opacity 0.4s ease-in-out,
+                        background-color 0.4s ease-in-out,
+                        box-shadow 0.4s ease-in-out;
         }
         .movie-tile:hover {
             background-color: #EEE;
             cursor: pointer;
+            opacity: 1;
+            box-shadow: 5px 5px 10px #777;
         }
         .scale-media {
             padding-bottom: 56.25%;
